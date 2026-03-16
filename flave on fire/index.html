@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flave on Fire | Catalogue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="entrance" class="page active">
+        <div class="hero-content">
+            <h1>FLAVE ON FIRE</h1>
+            <p>Pastries • Local Drinks • Foods</p>
+            <button class="main-btn" onclick="navigateTo('category-menu')">View Catalogue</button>
+        </div>
+    </section>
+
+    <section id="category-menu" class="page">
+        <button class="back-btn" onclick="navigateTo('entrance')">← Back Home</button>
+        <h2>Select a Category</h2>
+        <div class="category-grid">
+    <div class="cat-card" style="background-image: url('images/bg-snacks.jpg');" onclick="showCategory('snack packs')">
+        <h3>Snacks</h3>
+    </div>
+    
+    <div class="cat-card" style="background-image: url('images/bg-drinks.jpg');" onclick="showCategory('local beverages')">
+        <h3>Local Beverages</h3>
+    </div>
+
+    <div class="cat-card" style="background-image: url('images/bg-juice.jpg');" onclick="showCategory('fresh juice')">
+        <h3>Fresh Juice</h3>
+    </div>
+
+    <div class="cat-card" style="background-image: url('images/bg-jollof.jpg');" onclick="showCategory('food packs')">
+        <h3>Food Packs</h3>
+    </div>
+
+    <div class="cat-card" style="background-image: url('images/bg-stew.jpg');" onclick="showCategory('soups and stews')">
+        <h3>Soups & Stews</h3>
+    </div>
+</div>
+    </section>
+
+    <section id="product-list" class="page">
+    <button class="back-btn" onclick="navigateTo('category-menu')">← Back to Categories</button>
+    <h2 id="category-title">Items</h2>
+    <div id="catalogue-grid" class="catalogue-grid"></div> 
+</section>
+<footer class="main-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>FLAVE ON FIRE</h3>
+            <p>Bringing the authentic heat of home-cooked meals to your doorstep.</p>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>📍 Accra, Ghana</p>
+            <p>📞 +233 XX XXX XXXX</p>
+            <p>✉️ info@flaveonfire.com</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Opening Hours</h4>
+            <p>Mon - Sat: 9:00 AM - 9:00 PM</p>
+            <p>Sunday: Closed</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+                <a href="https://www.instagram.com/f_and_f_catering?igsh=MTNqdmU0ZnRoYnRnYQ==">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">WhatsApp</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Flave on Fire. All Rights Reserved.</p>
+    </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
